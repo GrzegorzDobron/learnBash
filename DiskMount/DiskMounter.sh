@@ -35,7 +35,7 @@ mount_Mint_Date () {
 }
 
 echo "DiskMounter"
-cd ${MOUNT_POINT} || (echo "I cant go to /media/grzegorz" && exit)
+cd ${MOUNT_POINT} || (echo "I cant go to ${MOUNT_POINT}" && exit)
 echo "mount point: ${MOUNT_POINT}"
 echo "partition to mount:"
 echo -e "1\t${NAME_WIN_SYSTEM}\n2\t${NAME_WIN_DATE}\n3\t${NAME_MINT_DATE}\n"
